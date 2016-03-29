@@ -1,9 +1,9 @@
-/*    width: 70px;
+    width: 70px;
     padding: 0;
     position: fixed;
     height: 100%;
     z-index: 200;
-}*/
+}
 
 body.nav-sm .container.body .right_col {
     padding: 10px 20px;
@@ -435,7 +435,6 @@ body {
 .page-content {
     margin-top: 1%;
 }
-
 
 .fixed_height_320 {
     height: 320px;
@@ -1093,12 +1092,12 @@ h2 {
 }
 
 
-.x_panel2 {
+x_panel_a{
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-    padding: 100px 80px;
-    display: none;
+    padding: 10px 17px;
+    display: inline-block;
     background: #fff;
     border: 1px solid #E6E9ED;
     -webkit-column-break-inside: avoid;
@@ -1111,6 +1110,7 @@ h2 {
     -ms-transition: all .2s ease;
     transition: all .2s ease;
 }
+
 
 .x_title {
     border-bottom: 2px solid #E6E9ED;
@@ -2452,8 +2452,7 @@ button,
 }
 
 .input-group {
-    margin-bottom:80px;
-
+    margin-bottom: 10px;
 }
 
 .ln_solid {
@@ -2486,7 +2485,6 @@ span.section {
     border-radius: 0;
     line-height: 30px;
     width: 50%;
-
 }
 
 .form-horizontal .control-label {
@@ -2537,11 +2535,9 @@ legend {
 }
 
 .form-group {
-    margin-top:0px;
+    margin-bottom: 10px;
 }
-.form-group1 {
-    margin-top:-30px;
-}
+
 .validate {
     margin-top: 10px;
 }
@@ -6433,10 +6429,3 @@ ul.notifications {
     border-left: 1px solid #ddd;
     background-color: #fafafa;
 }
-
-/*----------------------Global------------------------*/
-
-.margin_0 {
-    margin: 0;
-}
-
