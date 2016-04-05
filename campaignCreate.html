@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>connect | </title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- <link href="css/pick.css" rel="stylesheet"> -->
+        <!-- Custom styling plus plugins -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
+        <link href="css/icheck/flat/green.css" rel="stylesheet" />
+        <link href="css/floatexamples.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/nprogress.js"></script>
+        <!--[if lt IE 9]>
+            <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+            <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    <body class="nav-md">
+        <div class="container body">
+            <div class="main_container">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Connect</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class=""><a href="#">Dashboard</a></li>
+                                <li><a href="plan_list.html">Plan</a></li>
+                                <li><a href="#">Monitor</a></li>
+                                <li><a href="campaign_list.html">Campaigns</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New + <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="campaign.html">Campaign</a></li>
+                                        <li><a href="#">Channel</a></li>
+                                        <li><a href="#">Offer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </nav>
+                <!-- /top navigation -->
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    <div class="">
+                        <div class="page_tittle_bar page-title">
+                            <div class="title_left">
+                                <h3>Campagin Create</h3>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="page-content">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_content">
+                                    <div id="wizard" class="form_wizard wizard_horizontal">
+                                        <ul class="wizard_steps pull_right">
+                                            <li>
+                                                <a href="#step-1">
+                                                    <span class="step_no">1</span>
+                                                    <span class="step_descr">
+                                            Step 1<br />
+                                            <small>Step 1 description</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#step-2">
+                                                    <span class="step_no">2</span>
+                                                    <span class="step_descr">
+                                            Step 2<br />
+                                            <small>Step 2 description</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#step-3">
+                                                    <span class="step_no">3</span>
+                                                    <span class="step_descr">
+                                            Step 3<br />
+                                            <small>Step 3 description</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#step-4">
+                                                    <span class="step_no">4</span>
+                                                    <span class="step_descr">
+                                            Step 4<br />
+                                            <small>Step 4 description</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left"> 
+                                            <div id="step-1">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name">Campaign Name</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="first-name" name="cname" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4 col-sm-4 col-xs-12" for="last-name">Campaign Code <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="last-name" name="ccode" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">Goal</label>
+                                                     <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="birthday" name="cgoal" class="date-picker form-control col-md-7 col-xs-12" required="required" type="textarea">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                     <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">Description</label>
+                                                     <div class="col-md-6 col-sm-6 col-xs-12">
+                                                      <textarea class="form-control col-md-7 col-xs-12" rows="5" name="cdis"id="comment"></textarea>
+                                                      </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name">Frequency
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="first-name" name="cfreq" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4 col-sm-4 col-xs-12" for="first-name">Tag
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="first-name" name="ctag" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">Campaign Drive</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select class="form-control">
+                                                            <option>Choose option</option>
+                                                            <option>Discount</option>
+                                                            <option>M + N</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-2">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-sm-8 col-xs-12">
+                                                        <div class="x_panel">
+                                                            <div class="x_title">
+                                                                <h4>Offer</h4>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <div class="col-md-12 col-sm-12 col-xs-12 form-group top_search">
+                                                                    <div class="margin_0 input-group ">
+                                                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                            <select class="form-control">
+                                                                            <option>Offer Type</option>
+                                                                            <option>Discount</option>
+                                                                            <option>M+N</option>
+                                                                            </select>
+                                                                        </div> 
+                                                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                            <select class="form-control">
+                                                                            <option>Discount Type</option>
+                                                                            <option>$</option>
+                                                                            <option>%</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                            <input type="text" class="form-control" placeholder="Product"/>
+                                                                        </div>
+                                                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                            <input type="text" class="form-control" placeholder="Brand"/>
+                                                                        </div>         
+                                                                    </div>
+                                                                </div>
+                                                                <table class="table col-md-12 col-sm-12 col-xs-12">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>offer</th>
+                                                                            <th>discount at</th>
+                                                                            <th>product</th>
+                                                                            <th>campaign linked</th>
+                                                                            <th>Discount value</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Offer 1</td>
+                                                                            <td>$</td>
+                                                                            <td>Product</td>
+                                                                            <td>Lee</td>
+                                                                            <td>5</td>
+                                                                            <td>750</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="x_panel">
+                                                            <div class="x_title">
+                                                                <h4>Target Group Recommondation</h4>
+                                                            </div>
+                                                            <div class="x_content">
+                                                                <table class="table col-md-12 col-sm-12 col-xs-12">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>TG</th>
+                                                                            <th>Filters</th>
+                                                                            <th>Campaign</th>
+                                                                            <th>Count</th>
+                                                                            <th>PCR</th>
+                                                                            <th>PCR</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Offer 1</td>
+                                                                            <td>$</td>
+                                                                            <td>Product</td>
+                                                                            <td>Lee</td>
+                                                                            <td>5</td>
+                                                                            <td>750</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        <div class="row">
+                                                <div class="col-md-8 col-sm-8 col-xs-12">
+                                                <div class="x_panel">
+                                                    <div class="x_title">
+                                                        <h4>Target Group</h4>
+                                                    </div>
+                                                    <div class="x_content">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 form-group top_search">
+                                                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                                                <select class="form-control">
+                                                                <option>Gender</option>
+                                                                <option>Discount</option>
+                                                                <option>M+N</option>
+                                                                </select>
+                                                            </div> 
+                                                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                                                <select class="form-control">
+                                                                <option>Age</option>
+                                                                <option>$</option>
+                                                                <option>%</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                                                <select class="form-control">
+                                                                <option>Activity</option>
+                                                                <option>Discount</option>
+                                                                <option>M+N</option>
+                                                                </select>
+                                                            </div> 
+                                                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                                                <select class="form-control">
+                                                                <option>Clv</option>
+                                                                <option>$</option>
+                                                                <option>%</option>
+                                                                </select>
+                                                            </div> 
+                                                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                                                <select class="form-control">
+                                                                <option>Store</option>
+                                                                <option>$</option>
+                                                                <option>%</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <table class="table col-md-12 col-sm-12 col-xs-12">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Count</th>
+                                                                    <th>Campaign Linked</th>
+                                                                    <th>Past CR</th>
+                                                                    <th>Potential CR</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="x_panel">
+                                                            <div class="x_content">
+                                                                <table class="table col-md-12 col-sm-12 col-xs-12">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Campagin</th>
+                                                                            <th>Campagin Plan</th>
+                                                                            <th>Start Date</th>
+                                                                            <th>End Date</th>
+                                                                            <th>PCR</th>
+                                                                            <th>Revenue</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Offer 1</td>
+                                                                            <td>$</td>
+                                                                            <td>Product</td>
+                                                                            <td>Lee</td>
+                                                                            <td>5</td>
+                                                                            <td>750</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                             </div>
+                                            <div id="step-3">
+                                                <div class="x_panel">
+                                                    <div class="x_title">
+                                                        <h4>Channel</h4>
+                                                    </div>
+                                                    <div class="x_content">
+                                                        <div class="form-group">
+                                                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                                                <select class="form-control">
+                                                                    <option>Choose Channel</option>
+                                                                    <option value="category">Mail Chimp</option>
+                                                                    <option value="product">Mailer Light</option>
+                                                                    <option value="brand">Way To Sms</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-4">
+                                                <h2 class="StepTitle">Step 4 Content</h2>
+                                                <div class="form-group">
+                                                    <label class="lb1" for="first-name">Campaign Name:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="lb1" for="last-name">Goal:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="lb1">Frequency:</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="middle-name" class="lb1">Description: </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="lb1">Tag:</label> 
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="lb1">Offer:<span class="required"> </label>
+                                                </div> 
+                                                <div class="form-group">
+                                                    <label class="lb1">TG:<span class="required"></label>
+                                                </div>
+                                                <div class="form-group">
+                                                    
+                                                    <label class="lb1">Customer Count:<span class="required">
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    
+                                                    <label class="lb1">Expected Cost:<span class="required">
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="lb1">Expected conversion:
+                                                    </label>
+                                                </div> 
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="custom_notifications" class="custom-notifications dsp_none">
+            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+            </ul>
+            <div class="clearfix"></div>
+            <div id="notif-group" class="tabbed_notifications"></div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- bootstrap progress js -->
+        <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+        <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+        <!-- icheck -->
+        <script src="js/icheck/icheck.min.js"></script
+        <script src="js/custom.js"></script>
+        <!-- form wizard -->
+        <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
+        <!-- amcharts -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // Smart Wizard     
+                $('#wizard').smartWizard();
+
+                function onFinishCallback() {
+                    $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+                    //alert('Finish Clicked');
+                }
+            });
+
+            $(document).ready(function () {
+                // Smart Wizard 
+                $('#wizard_verticle').smartWizard({
+                    transitionEffect: 'slide'
+                });
+
+            });
+        </script>
+        <!-- /datepicker -->
+        <!-- /footer content -->
+    </body>
+
+</html>
