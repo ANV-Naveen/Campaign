@@ -11,7 +11,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet">
-        <!-- <link href="css/pick.css" rel="stylesheet"> -->
         <!-- Custom styling plus plugins -->
         <link href="css/custom.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
@@ -42,7 +41,6 @@
                             </button>
                             <a class="navbar-brand" href="#">Connect</a>
                         </div>
-                       
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li class=""><a href="#">Dashboard</a></li>
@@ -69,90 +67,83 @@
                         </div><!--/.nav-collapse -->
                     </div>
                 </nav>
-                <div class="container">
-                    <!-- /top navigation -->
-                    <!-- page content -->
-                    <div class="right_col" role="main">
-                        <div class="page_tittle_bar page-title">
+                <!-- /top navigation -->
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    <div class="row">
+                        <div class="page_tittle_bar page-title ">
                             <div class="title_left">
-                                <h3>Product Recomendation</h3>
+                                <h3>View Campaign Plan</h3>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="page-content">
-                                <form class="navbar-form" role="search col-md-2 col-sm-6 col-xs-12 col-md-offset-2">
-                                    <div class="input-group add-on col-md-6 col-md-offset-4">
-                                    <input type="text" class="form-control col-md-6" placeholder="Product Name" name="srch-term" id="srch-term">
-                                    <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
-                                    </div>
-                                </form>
-                            <div class="row">
-                                <div id="col-md-8 col-sm-6 col-xs-12">
-                                    <div id="container" style="width:70%; margin:auto"></div>
-                                </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="page-content">
+                            <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Name:</label>
                             </div>
-                            <div class="row">
-                                <div id="col-md-8cc col-sm-6 col-xs-12">
-                                    <div id="container1" style="width:20%; margin:auto"></div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th>Demand</th>
-                                            <th>Revenue</th>
-                                            <th>Discount</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                           <tr>
-                                            <td></td>
-                                            <td></td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Goal:</label>
                             </div>
-                            <table class="table col-md-8 col-sm-6 col-xs-12">
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Budget:</label>
+                            </div>
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Start Date:</label>
+                            </div>
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>End Date:</label>
+                            </div>
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Budget:</label>
+                            </div>
+                             <table class="table col-md-8 col-sm-6 col-xs-12">
                                 <thead>
                                     <tr>
-                                        <th>Offer</th>
+                                        <th>Campaign</th>
+                                        <th>Count</th>
                                         <th>Status</th>
-                                        <th>PCR</th>
-                                        <th>PR</th>
-                                        <th>Cost/Reach</th>
+                                        <th>Progress</th>
+                                        <th>Conversion Expected Achive</th>
+                                        <th>Controls</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Campaign1</td>
+                                        <td>2568</td>
+                                        <td>Running</td>
+                                        <td>50%</td>
+                                        <td>20%/2%</td>
+                                        <td><i class="fa fa-pause"></i>&nbsp&nbsp<i class="fa fa-play"style="color:green">&nbsp&nbsp<i class="fa fa-stop"style="color:red"></i></td>
+                                    </tr>
                                         <td></td>
                                         <td></td>
+                                        <td>Complete</td>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
+                                        <td><</td>
+                                    <tr>
                                     </tr>
                                 </tbody>
                             </table>
+                              <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Forecasted Conversion:</label>
+                             </div>
+                             <div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-4 form-group">
+                                <label>Forecasted cost:</label>
+                             </div> 
                             <div class="row">
-                            <div class="col-md-2 col-sm-6 col-xs-12 col-md-offset-4">
-                            <button type="submit" class="btn btn-success">select</button>
-                            </div>
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                            <button type="submit" class="btn btn-success"> cancel</button> 
-                            </div> 
-                            </div>                     
-                        </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 col-md-offset-4">
+                                <button type="submit" class="btn btn-success">select</button>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                <button type="submit" class="btn btn-success"> cancel</button> 
+                                </div> 
+                            </div>                           
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="custom_notifications" class="custom-notifications dsp_none">
-            <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
-            </ul>
-            <div class="clearfix"></div>
-            <div id="notif-group" class="tabbed_notifications"></div>
         </div>
         <script src="js/bootstrap.min.js"></script>
         <!-- bootstrap progress js -->
@@ -161,22 +152,14 @@
         <!-- icheck -->
         <script src="js/icheck/icheck.min.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="js/new.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
-        <script src="js/chart.js"></script>
-        <script src="js/chart1.js"></script>
         <!-- form wizard -->
         <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
         <!-- amcharts -->
-        <script type="text/javascript" src="js/chartjs/chart.js"></script>
-       
         <script>
             NProgress.done();
         </script>
         <!-- /datepicker -->
         <!-- /footer content -->
     </body>
-</html>
 
+</html>

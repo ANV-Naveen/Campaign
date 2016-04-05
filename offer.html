@@ -11,6 +11,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/offer.css"rel="stylesheet">
         <!-- Custom styling plus plugins -->
         <link href="css/custom.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
@@ -72,7 +73,7 @@
             <div class="row">
                 <div class="page_tittle_bar page-title ">
                     <div class="title_left">
-                    <h3>List Of Offer</h3>
+                    <h3>Offer</h3>
                     </div>
                 </div>
             </div>
@@ -103,21 +104,75 @@
                                         </div>         
                             </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="pull_right" style="float: right!important;">
-                        <a href="plan.html" type="button" class="btn btn-default btn-sm">Create</a>
-                        </div>
                     </div>
-
-                    <div class="row">
-                        <table class="table">
+                        <table class="table col-md-8 col-sm-4 col-xs-12"style="width:50%">
                             <thead>
                                 <tr>
                                     <th>offer</th>
                                     <th>discount type</th>
                                     <th>discount at</th>
                                     <th>product</th>
-                                    <th>comp linked</th>
+                                    <th>campaign linked</th>
+                                    <th>Discount value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <div class="col-md-8 col-sm-8 col-xs-12 form-group top_search">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Sender</option>
+                                            <option>Discount</option>
+                                            <option>M+N</option>
+                                        </select>
+                                </div> 
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Age</option>
+                                            <option>$</option>
+                                            <option>%</option>
+                                        </select>
+                                </div>
+                                          <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Activity</option>
+                                            <option>Discount</option>
+                                            <option>M+N</option>
+                                        </select>
+                                </div> 
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Clv</option>
+                                            <option>$</option>
+                                            <option>%</option>
+                                        </select>
+                                </div> 
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Store</option>
+                                            <option>$</option>
+                                            <option>%</option>
+                                        </select>
+                                   
+                            </div>
+                    </div>
+                        <table class="table col-md-8 col-sm-8 col-xs-12" style="width:50%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Count</th>
+                                    <th>Campaign Linked</th>
+                                    <th>Past CR</th>
+                                    <th>Potential CR</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -131,11 +186,11 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
         <script src="js/bootstrap.min.js"></script>
         <!-- bootstrap progress js -->
         <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
@@ -146,6 +201,7 @@
         <!-- form wizard -->
         <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
         <!-- amcharts -->
+        <script type="text/javascript" src="js/chartjs/chart.js"></script>
         <script>
             NProgress.done();
         </script>
